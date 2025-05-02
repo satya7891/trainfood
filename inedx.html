@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Train Food Service</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">🍽️</span>
+        <span class="logo-text">TrainFood</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <!-- Menu Dropdown -->
+        <li class="dropdown">
+          <a href="#">Menu ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Veg</a></li>
+            <li><a href="#">Non-Veg</a></li>
+            <li><a href="#">Combo Meals</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a href="#">Egg Curry</a></li>
+          </ul>
+        </li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- Modules Dropdown with Features -->
+        <li class="dropdown">
+          <a href="#">Modules ▾</a>
+          <ul class="dropdown-content">
+            <li class="sub-dropdown">
+              <a href="#user-module">User Module ▾</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="#">Profile Management</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Saved Addresses</a></li>
+                <li><a href="#">Feedback & Ratings</a></li>
+                <li><a href="#">Order Tracking</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="#admin-module">Admin Module ▾</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="#">User Management</a></li>
+                <li><a href="#">Vendor Oversight</a></li>
+                <li><a href="#">Order Monitoring</a></li>
+                <li><a href="#">Menu Approval</a></li>
+                <li><a href="#">Analytics Dashboard</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="#vendor-module">Vendor Module ▾</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="#">Menu Management</a></li>
+                <li><a href="#">Order Processing</a></li>
+                <li><a href="#">Inventory Tracking</a></li>
+                <li><a href="#">Delivery Coordination</a></li>
+                <li><a href="#">Payment Reconciliation</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="#train-seat-module">Train & Seat Selection ▾</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="#">PNR/Train Search</a></li>
+                <li><a href="#">Seat Selection</a></li>
+                <li><a href="#">Station Selection</a></li>
+                <li><a href="#">Train Schedule Integration</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="#food-ordering-module">Food Ordering ▾</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="#">Menu Browsing</a></li>
+                <li><a href="#">Cart Management</a></li>
+                <li><a href="#">Order Customization</a></li>
+                <li><a href="#">Real-Time Availability</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="#payment-module">Payment ▾</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="#">Multiple Payment Options</a></li>
+                <li><a href="#">Secure Transactions</a></li>
+                <li><a href="#">Refund Processing</a></li>
+                <li><a href="#">Payment History</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="#delivery-module">Delivery ▾</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="#">Real-Time Tracking</a></li>
+                <li><a href="#">Station Delivery</a></li>
+                <li><a href="#">Delivery Scheduling</a></li>
+                <li><a href="#">Delivery Status Updates</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="#notification-module">Notification ▾</a>
+              <ul class="sub-dropdown-content">
+                <li><a href="#">Order Confirmation</a></li>
+                <li><a href="#">Delivery Updates</a></li>
+                <li><a href="#">Promotional Alerts</a></li>
+                <li><a href="#">SMS/Email Notifications</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Login/Signup Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="login-link">Login/Signup ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="#" class="open-login">Login</a></li>
+            <li><a href="#" class="open-signup">Sign Up</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav-icons">
+        <span class="search-icon" title="Search Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <span class="cart-icon" title="View Cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        <!-- <span class="cart-badge">0</span>-->
+        </span>
+      </div>
+      <a href="#order" class="cta-button">Order Now</a>
+      <!--<div class="hamburger">☰</div>-->
+      <div class="hamburger">
+        <span class="hamburger-icon">☰</span>
+        <span class="close-icon" style="display: none;">×</span>
+      </div>
+    </nav>
+  </header>
+  <!-- Login/Signup Modal -->
+  <div class="modal" id="auth-modal">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <div id="login-form">
+        <h2>Login</h2>
+        <form>
+          <input type="text" placeholder="Email or Phone" required>
+          <input type="password" placeholder="Password" required>
+          <button type="button" onclick="alert('Login functionality to be implemented')">Login</button>
+        </form>
+        <div class="social-login">
+          <button onclick="alert('Google login to be implemented')">Google</button>
+          <button onclick="alert('Facebook login to be implemented')">Facebook</button>
+        </div>
+        <p style="text-align: center; margin-top: 1rem;">
+          Don't have an account? <a href="#" class="switch-to-signup">Sign Up</a>
+        </p>
+      </div>
+      <div id="signup-form" style="display: none;">
+        <h2>Sign Up</h2>
+        <form>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <input type="password" placeholder="Password" required>
+          <button type="button" onclick="alert('Sign up functionality to be implemented')">Register</button>
+        </form>
+        <div class="social-login">
+          <button onclick="alert('Google signup to be implemented')">Google</button>
+          <button onclick="alert('Facebook signup to be implemented')">Facebook</button>
+        </div>
+        <p style="text-align: center; margin-top: 1rem;">
+          Already have an account? <a href="#" class="switch-to-login">Login</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+<section class="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-20 py-12 bg-gray-900">
+  <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+      Hot Meals Delivered <br />To Your Train Seat!
+    </h1>
+    <p class="text-gray-300">
+      Order fresh, hygienic meals right from your seat. No delays, no worries—just good food on the go!
+    </p>
+    <div class="flex items-center gap-4 mt-4">
+      <input type="text" placeholder="Enter Train No / PNR" class="px-4 py-2 w-full md:w-2/3 rounded text-black" />
+      <button class="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded text-white">Order Now</button>
+    </div>
+  </div>
+  <div class="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
+    <img src="hero.png" alt="Food Image" class="w-72 md:w-96 rotate-on-load">
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <div class="feature-card">
+    <div class="feature-icon chef-icon">👨‍🍳</div>
+    <h3>Expert Team</h3>
+    <p>Our team ensures every meal is prepared with care, delivering quality food on your journey.</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon food-icon">🍽️</div>
+    <h3>Quality Food</h3>
+    <p>Fresh, hygienic meals made with the finest ingredients to satisfy your taste buds.</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon order-icon">🛒</div>
+    <h3>Online Order</h3>
+    <p>Order your meals easily through our platform, anytime, anywhere during your train journey.</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon service-icon">📞</div>
+    <h3>24/7 Service</h3>
+    <p>We're here round the clock to assist you with your food orders and delivery needs.</p>
+  </div>
+</section>
+<!-- About Us Section -->
+<section class="about-us">
+  <div class="about-images">
+    <div class="image-container">
+      <img src="brooke-lark-HlNcigvUi4Q-unsplash.jpg" alt="Restaurant Interior">
+    </div>
+    <div class="image-grid">
+      <div class="image-container">
+        <img src="about-2.jpg" alt="Food Preparation">
+      </div>
+      <div class="image-container">
+        <img src="about-3.jpg" alt="Food Platter">
+      </div>
+      <div class="image-container">
+        <img src="hero-img.png" alt="Food Platter">
+      </div>
+      <div class="image-container">
+        <img src="eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg" alt="Food Platter">
+      </div>
+    </div>
+  </div>
+  <div class="about-content">
+    <h4 class="sub-heading">About Us</h4>
+    <h2>Welcome to Train Food Service</h2>
+    <p>We bring delicious, high-quality meals directly to your train seat, ensuring you enjoy a delightful dining experience during your journey. Our curated menu offers a variety of options to suit all tastes.</p>
+    <p>With years of experience in food delivery, we partner with trusted vendors to provide fresh and hygienic meals, delivered on time at your chosen station. Travel with ease, knowing your meals are taken care of.</p>
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-number">15</span>
+        <span class="stat-label">Years of Experience</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">50</span>
+        <span class="stat-label">Popular Chefs</span>
+      </div>
+    </div>
+    <a href="#about" class="read-more">Read More</a>
+  </div>
+</section>
+
+<!-- Food Menu Section -->
+<section class="food-menu">
+  <div class="menu-header">
+    <h4 class="sub-heading">Food Menu</h4>
+    <h2>Most Popular Items</h2>
+  </div>
+  <div class="menu-tabs">
+    <button class="tab-button active" data-tab="breakfast">Breakfast</button>
+    <button class="tab-button" data-tab="lunch">Lunch</button>
+    <button class="tab-button" data-tab="dinner">Dinner</button>
+  </div>
+  <div class="menu-items" id="breakfast">
+    <div class="menu-item">
+      <img src="eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg" alt="Poha">
+      <div class="menu-item-content">
+        <h3>Poha</h3>
+        <p>A light and fluffy breakfast dish made with flattened rice, onions, and spices.</p>
+        <span class="price">₹120</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="rimsha-noor-1RE1sDbR4Go-unsplash.jpg" alt="Idli Sambhar">
+      <div class="menu-item-content">
+        <h3>Idli Sambhar</h3>
+        <p>Soft steamed rice cakes served with a flavorful lentil-based sambhar.</p>
+        <span class="price">₹160</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="shreyak-singh-0j4bisyPo3M-unsplash.jpg" alt="Masala Dosa">
+      <div class="menu-item-content">
+        <h3>Masala Dosa</h3>
+        <p>Crispy rice crepe filled with a spiced potato filling, served with chutney.</p>
+        <span class="price">₹120</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="baiq-daling-ykThMylLsbY-unsplash.jpg" alt="Upma">
+      <div class="menu-item-content">
+        <h3>Upma</h3>
+        <p>A savory semolina dish cooked with vegetables and mild spices.</p>
+        <span class="price">₹150</span>
+      </div>
+    </div>
+  </div>
+  <div class="menu-items" id="lunch" style="display: none;">
+    <div class="menu-item">
+      <img src="ChatGPT Image Apr 23, 2025, 12_15_03 AM.png" alt="Chicken Biryani">
+      <div class="menu-item-content">
+        <h3>Chicken Biryani</h3>
+        <p>Fragrant rice cooked with tender chicken and aromatic spices.</p>
+        <span class="price">₹130</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="shreyak-singh-0j4bisyPo3M-unsplash.jpg" alt="Paneer Butter Masala">
+      <div class="menu-item-content">
+        <h3>Paneer Butter Masala</h3>
+        <p>Soft paneer cubes in a rich, creamy tomato-based gravy.</p>
+        <span class="price">₹140</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="monika-grabkowska-P1aohbiT-EY-unsplash.jpg" alt="Dal Tadka">
+      <div class="menu-item-content">
+        <h3>Dal Tadka</h3>
+        <p>Yellow lentils tempered with spices, served with rice or roti.</p>
+        <span class="price">₹120</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="kalyani-akella-zORLdgjMguo-unsplash.jpg" alt="Veg Thali">
+      <div class="menu-item-content">
+        <h3>Veg Thali</h3>
+        <p>A wholesome platter with dal, sabzi, rice, roti, and salad.</p>
+        <span class="price">₹150</span>
+      </div>
+    </div>
+  </div>
+  <div class="menu-items" id="dinner" style="display: none;">
+    <div class="menu-item">
+      <img src="krunal-lakhatariya-YrmZSEpN_jc-unsplash.jpg" alt="Butter Chicken">
+      <div class="menu-item-content">
+        <h3>Butter Chicken</h3>
+        <p>Tender chicken cooked in a creamy tomato and butter sauce.</p>
+        <span class="price">₹140</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="baiq-daling-ykThMylLsbY-unsplash.jpg" alt="Mutton Rogan Josh">
+      <div class="menu-item-content">
+        <h3>Mutton Rogan Josh</h3>
+        <p>Aromatic mutton curry with rich Kashmiri spices.</p>
+        <span class="price">₹120</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="brooke-lark-HlNcigvUi4Q-unsplash.jpg" alt="Veg Biryani">
+      <div class="menu-item-content">
+        <h3>Veg Biryani</h3>
+        <p>Fragrant rice cooked with mixed vegetables and spices.</p>
+        <span class="price">₹110</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="ChatGPT Image Apr 23, 2025, 12_13_17 AM.png" alt="Fish Curry">
+      <div class="menu-item-content">
+        <h3>Fish Curry</h3>
+        <p>Fresh fish cooked in a tangy coconut-based curry.</p>
+        <span class="price">₹130</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Most Popular Items Section (Inspired by Restoran) -->
+<section class="popular-items-section">
+  <div class="food-menu-title">
+    <h2 class="section-title">Most Popular Items</h2>
+    <div class="menu-tabs">
+      <span class="tab active" data-tab="breakfast">🍳 Breakfast</span>
+      <span class="tab" data-tab="lunch">🍔 Lunch</span>
+      <span class="tab" data-tab="dinner">🍽️ Dinner</span>
+    </div>
+  </div>
+  <div class="items-container">
+    <div class="item-list" data-tab="breakfast">
+      <div class="item">
+        <img src="breakfast.jpg" alt="Chicken Burger">
+        <div class="item-details">
+          <h3>Chicken Burger</h3>
+          <p>Lorem ipsum clita erat amet dolor justo diam</p>
+          <span class="original-price">₹160</span>
+          <span class="discounted-price">₹100 (30% off)</span>
+          <button class="add-to-cart" data-price="10.50" data-original="15">Add to Cart</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="burger.jpg" alt="Pasta">
+        <div class="item-details">
+          <h3>Pasta</h3>
+          <p>Lorem ipsum clita erat amet dolor justo diam</p>
+          <span class="original-price">₹100</span>
+          <span class="discounted-price">₹70 (30% off)</span>
+          <button class="add-to-cart" data-price="8.40" data-original="12">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="item-list" data-tab="lunch" style="display: none;">
+      <div class="item">
+        <img src="shreyak-singh-0j4bisyPo3M-unsplash.jpg" alt="Grilled Chicken">
+        <div class="item-details">
+          <h3>Grilled Chicken</h3>
+          <p>Lorem ipsum clita erat amet dolor justo diam</p>
+          <span class="original-price">₹200</span>
+          <span class="discounted-price">₹160 (30% off)</span>
+          <button class="add-to-cart" data-price="12.60" data-original="18">Add to Cart</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="baiq-daling-ykThMylLsbY-unsplash.jpg" alt="Fried Rice">
+        <div class="item-details">
+          <h3>Fried Rice</h3>
+          <p>Lorem ipsum clita erat amet dolor justo diam</p>
+          <span class="original-price">₹100</span>
+          <span class="discounted-price">₹70 (30% off)</span>
+          <button class="add-to-cart" data-price="7.00" data-original="10">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="item-list" data-tab="dinner" style="display: none;">
+      <div class="item">
+        <img src="brooke-lark-HlNcigvUi4Q-unsplash.jpg" alt="Steak">
+        <div class="item-details">
+          <h3>Steak</h3>
+          <p>Lorem ipsum clita erat amet dolor justo diam</p>
+          <span class="original-price">₹200</span>
+          <span class="discounted-price">₹160 (30% off)</span>
+          <button class="add-to-cart" data-price="14.00" data-original="20">Add to Cart</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="chumil-photo-TK5VlaGqkZc-unsplash.jpg" alt="Salad">
+        <div class="item-details">
+          <h3>Salad</h3>
+          <p>Lorem ipsum clita erat amet dolor justo diam</p>
+          <span class="original-price">₹100</span>
+          <span class="discounted-price">₹70 (30% off)</span>
+          <button class="add-to-cart" data-price="5.60" data-original="8">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Book a Meal Delivery Section (Inspired by Restoran) -->
+<section class="booking-section">
+  <div class="booking-container">
+    <div class="booking-image">
+      <img src="dan-gold-E6HjQaB7UEA-unsplash.jpg" alt="Meal Delivery">
+      <div class="play-button"></div>
+    </div>
+    <div class="booking-form">
+      <h2 class="booking-title">Book a Meal Delivery</h2>
+      <form id="booking-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="datetime-local" placeholder="Date & Time" required>
+        <select name="people" required>
+          <option value="1">No of People: 1</option>
+          <option value="2">No of People: 2</option>
+          <option value="3">No of People: 3</option>
+          <option value="4">No of People: 4</option>
+        </select>
+        <textarea placeholder="Special Request" rows="3"></textarea>
+        <button type="submit" class="book-now">Book Now</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Our Master Chefs Section (Inspired by Restoran) -->
+<section class="chefs-section">
+  <div class="chefs-container">
+    <h2 class="section-subtitle">Team Members</h2>
+    <h2 class="section-title">Our Master Chefs</h2>
+    <div class="chefs-grid">
+      <div class="chef-card">
+        <img src="team-1.jpg" alt="Chef 1">
+        <h3>Full Name</h3>
+        <p>Designation</p>
+      </div>
+      <div class="chef-card">
+        <img src="team-2.jpg" alt="Chef 2">
+        <h3>Full Name</h3>
+        <p>Designation</p>
+      </div>
+      <div class="chef-card">
+        <img src="team-3.jpg" alt="Chef 3">
+        <h3>Full Name</h3>
+        <p>Designation</p>
+      </div>
+      <div class="chef-card">
+        <img src="team-4.jpg" alt="Chef 4">
+        <h3>Full Name</h3>
+        <p>Designation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-section">
+  <div class="section-header">
+      <h2>What Our Clients Say</h2>
+      <p>Hear from businesses and individuals who have experienced our services firsthand.</p>
+  </div>
+
+  <div class="swiper testimonial-slider">
+      <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+              <div class="testimonial-content">
+                  <p>This service completely transformed our business operations. The team was professional, responsive, and delivered beyond our expectations. We've seen a 40% increase in productivity since implementation.</p>
+              </div>
+              <div class="testimonial-author">
+                  <div class="author-img">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                  </div>
+                  <div class="author-info">
+                      <h4>Sarah Johnson</h4>
+                      <p>CEO, TechSolutions Inc.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+              <div class="testimonial-content">
+                  <p>I was skeptical at first, but after just one month of using this platform, all my doubts were erased. The customer support is exceptional, and the product just works seamlessly.</p>
+              </div>
+              <div class="testimonial-author">
+                  <div class="author-img">
+                      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                  </div>
+                  <div class="author-info">
+                      <h4>Michael Chen</h4>
+                      <p>Marketing Director, BrightIdeas</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+              <div class="testimonial-content">
+                  <p>As a small business owner, I needed an affordable solution that wouldn't compromise on quality. This service exceeded my expectations in every way. Highly recommended!</p>
+              </div>
+              <div class="testimonial-author">
+                  <div class="author-img">
+                      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez">
+                  </div>
+                  <div class="author-info">
+                      <h4>Emily Rodriguez</h4>
+                      <p>Founder, Bloom & Grow</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+              <div class="testimonial-content">
+                  <p>The implementation was smooth and the training materials were comprehensive. Our team was able to hit the ground running. The ROI was evident within the first quarter.</p>
+              </div>
+              <div class="testimonial-author">
+                  <div class="author-img">
+                      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Kim">
+                  </div>
+                  <div class="author-info">
+                      <h4>David Kim</h4>
+                      <p>CTO, NexGen Technologies</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+              <div class="testimonial-content">
+                  <p>After evaluating several options in the market, we chose this solution and it was the best decision we made. The customization options allowed us to tailor it perfectly to our workflow.</p>
+              </div>
+              <div class="testimonial-author">
+                  <div class="author-img">
+                      <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="Priya Patel">
+                  </div>
+                  <div class="author-info">
+                      <h4>Priya Patel</h4>
+                      <p>Operations Manager, GlobalConnect</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Add pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Navigation buttons -->
+      <!-- <div class="swiper-button-next"></div> -->
+      <!--<div class="swiper-button-prev"></div> -->
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Company -->
+    <div class="footer-box">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Reservation</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>📍 123 Street, New York, USA</p>
+      <p>📞 +012 345 67890</p>
+      <p>📧 info@example.com</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <!-- Opening Hours -->
+    <div class="footer-box">
+      <h3>Opening</h3>
+      <p>Monday - Saturday: 09AM - 09PM</p>
+      <p>Sunday: 10AM - 08PM</p>
+    </div>
+    <!-- Newsletter -->
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email" />
+        <button type="submit">SIGNUP</button>
+      </form>
+    </div>
+  </div>
+  <!-- Bottom Links -->
+  <div class="footer-bottom">
+    <p>© Your Site Name, All Right Reserved. Designed by <a href="#">HTML Codex</a></p>
+    <p>Distributed by <a href="#">ThemeWagon</a></p>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Cookies</a>
+      <a href="#">Help</a>
+      <a href="#">FAQs</a>
+    </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
